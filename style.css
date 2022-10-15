@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: NorseBold;
+    src: url(./Norse-Bold.otf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.page-img {
+    min-width: 30%;
+    background-image: url('./halie-west-25xggax4bSA-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.odin-img h2 {
+    font-family: 'NorseBold';
+    font-size: 3rem;
+}
