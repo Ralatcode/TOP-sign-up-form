@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+:root {
+    --page-content-gap: 10%;
+}
+
 html {
     font-size: 16px;
 }
@@ -70,18 +74,32 @@ body {
 
 .page-content {
     background-color:rgb(243 244 246);
-    padding-left: 10%;
     min-width: 60%;
 }
 
 .info {
+    padding-left: var(--page-content-gap);
     font-size: 1.1rem;
     line-height: 1.5;
     max-width: 650px;
     margin-top: 15vh;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .info .header {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    background-color: white;
+    padding: 1rem 0 1rem var(--page-content-gap);
+}
+
+form > h3 {
+    font-size: 1.4rem;
+}
+
+.form-group {
+    display: flex;
+    
 }
