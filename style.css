@@ -23,7 +23,7 @@ body {
 }
 
 .page-img {
-    min-width: 30%;
+    min-width: 40%;
     background-image: url('./halie-west-25xggax4bSA-unsplash.jpg');
     background-position: center;
     background-size: cover;
@@ -66,4 +66,22 @@ body {
 
 .pic-credit a {
     color: inherit;
+}
+
+.page-content {
+    background-color:rgb(243 244 246);
+    padding-left: 10%;
+    min-width: 60%;
+}
+
+.info {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 650px;
+    margin-top: 15vh;
+    margin-bottom: 1rem;
+}
+
+.info .header {
+    margin-bottom: 2rem;
 }
