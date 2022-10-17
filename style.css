@@ -26,6 +26,10 @@ body {
     min-width: 100vw;
 }
 
+input {
+    font: inherit;
+}
+
 .page-img {
     min-width: 40%;
     background-image: url('./halie-west-25xggax4bSA-unsplash.jpg');
@@ -92,14 +96,81 @@ body {
 
 form {
     background-color: white;
-    padding: 1rem 0 1rem var(--page-content-gap);
+    padding: 1.5rem 0 1.5rem var(--page-content-gap);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 form > h3 {
     font-size: 1.4rem;
+    margin-bottom: 0.75rem;
 }
 
 .form-group {
     display: flex;
-    
+    align-items: center;
+    justify-content: space-between;
+    max-width: 650px;
+    margin-bottom: .75rem;
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.input-box > label {
+    font-size: .8rem;
+    margin-bottom: .4rem;
+    text-transform: uppercase;
+}
+
+.input-box > input {
+    border: 1px solid #E5E7EB;
+    padding: .5rem .4rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: ease-in-out, all 200ms ease-in-out;
+}
+
+.input-box > input:focus {
+    border-color: rgba(0, 0, 255, 0.753);
+    border-width: 2px;
+    outline: none;
+}
+
+.form-extras {
+    margin-left: var(--page-content-gap);
+    margin-top: 2rem;
+}
+
+.submit-div {
+    margin-bottom: 1.5rem;
+}
+
+.submit-div > button {
+    font: inherit;
+    background-color: #596D48;
+    color: white;
+    padding: 1rem .5rem;
+    width: 200px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form-extras > h5 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.login-link {
+    color: #596D48;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .form-group {
+        max-width: 80%;
+    }
 }
